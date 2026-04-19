@@ -15,4 +15,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  build: {
+    cssCodeSplit: false,     // required for single file
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,  // disables code splitting
+      },
+    },
+  },
 });
