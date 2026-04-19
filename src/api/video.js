@@ -91,7 +91,7 @@
 // };
 
 
-import api from "./config";
+import api from "./config.js";
 
 // Get all videos (returns ONLY array)
 export const getAllVideos = async (params = {}) => {
@@ -168,4 +168,16 @@ export const searchVideos = async (query, params = {}) => {
     params: { query, ...params },
   });
   return response.data.data.docs;
+};
+
+export const videoApi = {
+  getAllVideos,
+  getVideoById,
+  uploadVideo,
+  updateVideo,
+  deleteVideo,
+  togglePublishStatus,
+  getUserVideos,
+  updateThumbnail,
+  searchVideos,
 };

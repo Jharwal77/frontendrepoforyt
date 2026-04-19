@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { VideoGrid } from "../components/video/VideoGrid";
-import { videoApi } from "../api/video";
+import { videoApi   } from "../api/video";
 
 const categories = [
   "All",
