@@ -10,16 +10,18 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), viteSingleFile()],
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
   },
+
   build: {
-    cssCodeSplit: false,     // required for single file
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
-        manualChunks: undefined,  // disables code splitting
+        manualChunks: undefined,
       },
     },
   },
