@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Change this to your backend URL
-const BASE_URL = `${import.meta.env.VITE_API_URL}/api/v1`;
+const BASE_URL = "https://mainbackend-u3m9.onrender.com/api/v1";
 
 const api = axios.create({
   baseURL: BASE_URL,
