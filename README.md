@@ -1,36 +1,68 @@
-# 🎨 Frontend – Social Media Platform (YouTube + Twitter Clone)
+🚀 Frontend – Social Media Platform (YouTube + Twitter Clone)
 
-This is the frontend of a full-stack social media application inspired by YouTube and Twitter. It provides a modern UI for video browsing, tweeting, user authentication, and content interaction.
+A modern frontend application for a full-stack social media platform inspired by YouTube and Twitter.
 
-Built using React.js with Vite, the application communicates with a backend API for all data operations.
+The platform provides an interactive UI for video streaming, tweeting, user authentication, subscriptions, likes, comments, playlists, and content discovery.
 
----
+Built using React.js and Vite, the frontend communicates with a scalable backend API and focuses on responsive UI design, modular architecture, reusable components, and smooth user experience.
 
-## 🚀 Features
+🌐 Live Demo
+Frontend Application
 
-* 🔐 User Authentication (Login / Register)
-* 🎥 Video Feed & Watch Page
-* 🐦 Tweet (Microblogging) System
-* ❤️ Like & Interaction Features
-* 📺 Channel & User Pages
-* 🔍 Search Functionality
-* 📱 Responsive UI Design
+https://viewtube-six.vercel.app/
 
----
+GitHub Repository
 
-## 🛠️ Tech Stack
+https://github.com/Jharwal77/frontendrepoforyt
 
-* React.js
-* JavaScript (ES6+)
-* Vite
-* Context API (State Management)
-* Fetch API / Axios
-
----
-
-## 📁 Project Structure
-
-```id="t0tfsp"
+✨ Features
+🔐 Authentication System
+User Registration
+User Login
+JWT Authentication Integration
+Protected Routes
+Persistent User Sessions
+🎥 Video Platform Features
+Video Feed
+Watch Video Page
+Video Cards & Grid Layout
+Trending Content Display
+Upload Video Interface
+🐦 Tweet (Microblogging) System
+Create Tweets
+View Tweet Feed
+User Tweet Pages
+Interactive Social Feed
+❤️ Social Interaction Features
+Like Videos
+Comment System
+Subscription System
+Playlist Management
+Watch History
+Liked Videos Section
+🔍 Search Functionality
+Search Videos
+Search Content Feed
+Dynamic Search Pages
+📱 Responsive UI
+Mobile Responsive Design
+Sidebar Navigation
+Reusable Layout Components
+Clean User Interface
+🛠️ Tech Stack
+Frontend
+React.js
+JavaScript (ES6+)
+Vite
+State Management
+Context API
+API Communication
+Fetch API
+Axios
+Styling
+CSS
+Responsive Layout Design
+📁 Project Structure
 src/
 │
 ├── api/                    # API layer (backend communication)
@@ -77,89 +109,109 @@ src/
 ├── App.css
 ├── index.css
 └── main.jsx
-```
+🔗 Backend Integration
 
----
+This frontend communicates with a Node.js + Express backend API.
 
-## 🔗 Backend Integration
-
-This frontend connects to a backend API (Node.js + Express).
-
-Use environment variable for API base URL:
-
-```id="ydp2y9"
+API Configuration
 const API_URL = import.meta.env.VITE_API_URL;
-```
 
----
+The backend handles:
 
-## ⚙️ Setup Instructions
+authentication
+video management
+tweet APIs
+likes & comments
+subscriptions
+media uploads
+⚙️ Environment Variables
 
-### 1. Clone repository
+Create a .env file in the project root:
 
-```id="g2ahpu"
+VITE_API_URL=https://your-backend-url.onrender.com
+🚀 Setup Instructions
+1. Clone Repository
 git clone https://github.com/Jharwal77/frontendrepoforyt.git
 cd frontendrepoforyt
-```
-
-### 2. Install dependencies
-
-```id="hy3p2k"
+2. Install Dependencies
 npm install
-```
+3. Configure Environment Variables
 
-### 3. Create `.env` file
+Create a .env file and add the backend API URL.
 
-```id="ntfp0g"
-VITE_API_URL=https://your-backend-url.onrender.com
-```
-
-### 4. Run development server
-
-```id="3dwyq8"
+4. Start Development Server
 npm run dev
-```
 
----
+Application runs on:
 
-## 🌐 Deployment
+http://localhost:5173
+📄 Application Pages
+Page	Purpose
+HomePage	Video feed & homepage
+WatchPage	Video watching interface
+LoginPage	User login
+RegisterPage	User registration
+ChannelPage	User channel/profile
+SearchPage	Search results
+TweetPage	Tweet feed & interactions
+UploadPage	Upload new content
+HistoryPage	Watch history
+LikedVideosPage	User liked videos
+⚡ Frontend Architecture Highlights
+Component-Based Architecture
 
-* Frontend: Vercel
-* Backend: Render
-* Database: MongoDB Atlas
+Reusable React components improve scalability and maintainability.
 
----
+API Abstraction Layer
 
-## 📌 Important Notes
+Dedicated API modules separate frontend UI from backend communication logic.
 
-* Backend must be running for full functionality
-* Do not commit `.env` file
-* Replace API URL for production deployment
+Global Authentication State
 
----
+Context API manages:
 
-## 🚀 Future Improvements
+user session
+authentication state
+protected routing
+Responsive Design
 
-* 💬 Comments UI improvements
-* 🔔 Notifications system
-* 📤 Media upload enhancements
-* 🧠 Recommendation system
+Optimized layouts for:
 
----
+desktop
+tablet
+mobile devices
+🌍 Deployment
+Frontend
+Vercel
+Backend
+Render
+Database
+MongoDB Atlas
+📌 Important Notes
+Backend server must be running for full functionality
+Do not commit .env files
+Configure production API URLs before deployment
+Ensure proper CORS setup on backend
+🚀 Future Improvements
 
-## 👨‍💻 Author
+Potential future enhancements:
+
+💬 Improved Comments UI
+🔔 Notifications System
+📤 Advanced Media Uploads
+🧠 Recommendation Engine
+🌙 Dark Mode
+📡 Real-Time Features
+🎯 Personalized Feed
+⚡ Performance Optimization
+🔍 Advanced Search Filters
+👨‍💻 Author
 
 Rahul Jharwal
 Full Stack Developer (MERN)
 
----
+⭐ Contributing
 
-## ⭐ Contributing
+Pull requests are welcome.
 
-Pull requests are welcome. For major changes, open an issue first.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
+For major changes, please open an issue first to discuss proposed updates.
