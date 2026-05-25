@@ -311,7 +311,7 @@ Potential future enhancements:
 
 # 👨‍💻 Author
 
-Rahul Jharwal
+Rahul Meena
 Full Stack Developer (MERN)
 
 ---
